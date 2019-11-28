@@ -6,7 +6,7 @@ from collections import defaultdict
 from tensorboard.backend.event_processing import event_accumulator
 import numpy as np
 
-# example : python util/aggregate_tensorboard_results.py --log-folder $LOG_DIR/baseline --scalar-names auc10_val_metric --filter-string *fold_None_*
+# example : python util/aggregate_tensorboard_results.py --log-folder $LOG_DIR/baseline --scalar-names val_metric --filter-string *fold_None_*
 # --tensorboard-field histograms --scalar-names max_grad_abs --log-folder C:\Temp\hist_grad
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
